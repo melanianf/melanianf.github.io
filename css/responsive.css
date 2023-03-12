@@ -1,0 +1,61 @@
+@media screen and (max-width: 922px) {
+}
+
+@media screen and (max-width: 576px) {
+  .logo a {
+    font-size: 25px;
+    font-weight: bold;
+    float: left;
+    font-family: courier;
+    color: #37306b;
+    text-decoration: none;
+    padding-left: 25px;
+  }
+  nav ul li a {
+    font-weight: bold;
+    text-align: left;
+    padding: 0px 8px 0px 8px;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .menu {
+    float: left;
+    padding-left: 19px;
+  }
+  .button-nav {
+    padding: 7.5px 10px 7.5px 10px;
+    border-radius: 10px;
+  }
+
+  /* Hero */
+  #hero img {
+    width: 100%;
+    height: auto;
+  }
+  h2 {
+    font-weight: 800;
+    font-size: 23px;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+  .kolom {
+    width: 350px;
+  }
+
+  /* Konten*/
+  .row {
+    width: 350px;
+    margin: 10px 25px 10px 25px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  footer h5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+}

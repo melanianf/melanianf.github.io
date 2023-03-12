@@ -1,0 +1,270 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Navbar Style */
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.logo a {
+  font-size: 50px;
+  font-weight: bold;
+  float: left;
+  font-family: courier;
+  color: #37306b;
+  text-decoration: none;
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky; /*agar posisi navbar tetap ketika discroll */
+  position: -webkit-sticky; /*untuk safari */
+  top: 0;
+  background-color: white;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* menyembunyikan konten yang keluar dari wadahnya, yang dimana lebar dan tinggi pada suatu elemen melebihi wadah */
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.button-nav {
+  background-color: #37306b;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+}
+
+.button-nav:hover {
+  background-color: #9e4784;
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero section */
+section {
+  margin: auto;
+  display: flex; /* membuat tampilan dalam div ke dalam bentuk kolom */
+  margin-bottom: 50px;
+}
+
+.kolom {
+  margin: 50px 0px 50px 0px;
+}
+
+.deskripsi {
+  font-weight: bold;
+  font-family: "comic sans ms";
+  color: #d27685;
+  margin-bottom: 0px;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #37306b;
+  width: 100%;
+  line-height: 50px;
+}
+
+p {
+  font-family: "comic sans ms";
+  color: #37306b;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.button-hero {
+  background-color: #9e4784;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button-hero:hover {
+  background-color: #d27685;
+  color: white;
+}
+
+/* Konten Section */
+.deskripsi-konten {
+  padding-top: 50px;
+}
+
+#konten img {
+  width: 100%;
+  height: 175px;
+  border-radius: 10px;
+}
+
+#konten .row {
+  margin-top: 30px;
+}
+
+.button-konten {
+  background-color: #d27685ab;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px 15px 10px 15px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button-konten:hover {
+  background-color: #d27685;
+  color: white;
+}
+
+/* .text-center {
+  text-align: left !important;
+} */
+
+/* Galeri style */
+.card-galeri img {
+  width: 100%;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: all 0.3s ease-out;
+}
+
+.card-galeri:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease-in;
+}
+
+.card-galeri {
+  margin: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(5, 5, 5, 0.3); */
+  background-image: linear-gradient(
+    to bottom,
+    rgba(5, 5, 5, 0),
+    rgba(5, 5, 5, 0.5)
+  );
+  text-align: center;
+  right: 10000px;
+}
+
+.card-galeri:hover .overlay {
+  right: 0;
+}
+
+.card-galeri h5 {
+  font-size: 18px;
+  color: white;
+  position: relative;
+  top: 150px;
+}
+
+.button-galeri {
+  background-color: #d27685ab;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 10px 15px 10px 15px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  top: 150px;
+}
+
+.button-galeri:hover {
+  background-color: #d27685;
+  color: white;
+}
+
+/* footer */
+
+footer {
+  background-color: #37306b;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  padding-top: 25px;
+  width: 100%;
+}
+
+footer h5 {
+  text-align: center;
+  color: white;
+  font-family: "comic sans ms";
+  font-size: 18px;
+}
+
+/* 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(5, 5, 5, 0.7);
+}
+
+.overlay p,
+h5 {
+  text-align: center;
+  color: #9e4784;
+  line-height: 2px;
+  position: relative;
+  top: 130px;
+  text-shadow: 1px 1px rgba(5, 5, 5, 0.7);
+}
+
+.overlay:hover {
+  background-color: rgb(0, 0, 0, 0.6);
+  opacity: 1;
+} */
